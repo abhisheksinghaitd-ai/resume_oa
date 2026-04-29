@@ -15,7 +15,7 @@ class UserProfile {
     required this.goals,
   });
 
-  // 🔥 COPY WITH (required for onboarding updates)
+  
   UserProfile copyWith({
     String? name,
     String? email,
@@ -34,7 +34,7 @@ class UserProfile {
     );
   }
 
-  // 🔥 TO MAP (for Firestore)
+  
   Map<String, dynamic> toMap() {
     return {
       "name": name,
@@ -46,7 +46,7 @@ class UserProfile {
     };
   }
 
-  // 🔥 SAFE FROM MAP (handles Firestore types correctly)
+  
   factory UserProfile.fromMap(Map<String, dynamic> map) {
     return UserProfile(
       name: map['name'] ?? '',

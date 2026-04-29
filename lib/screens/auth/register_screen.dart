@@ -106,7 +106,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               children: [
                 const SizedBox(height: 40),
             
-                // 🔥 HEADER
+                
                 const Text(
                   "Create Account",
                   style: TextStyle(
@@ -122,7 +122,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             
                 const SizedBox(height: 40),
             
-                // EMAIL
+                
                 _buildInput(
                   controller: emailController,
                   hint: "Email",
@@ -131,7 +131,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             
                 const SizedBox(height: 16),
             
-                // PASSWORD
+                
                 _buildInput(
                   controller: passwordController,
                   hint: "Password",
@@ -145,7 +145,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             
                 const SizedBox(height: 16),
             
-                // CONFIRM PASSWORD
+                
                 _buildInput(
                   controller: confirmPasswordController,
                   hint: "Confirm Password",
@@ -159,7 +159,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             
                 const SizedBox(height: 30),
             
-                // REGISTER BUTTON
+                
                 SizedBox(
                   width: double.infinity,
                   height: 55,
@@ -182,7 +182,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             
                 const SizedBox(height: 20),
             
-                // BACK TO LOGIN
+                
                 Center(
                   child: GestureDetector(
                     onTap: () {

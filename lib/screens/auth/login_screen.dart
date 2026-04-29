@@ -39,7 +39,7 @@ Future<void> login() async {
           .get();
 
       if (doc.exists) {
-        // ✅ Existing user → load profile
+        
         final profile = UserProfile.fromMap(doc.data()!);
 
         context.read<UserProvider>().setProfile(profile);
@@ -49,7 +49,7 @@ Future<void> login() async {
           MaterialPageRoute(builder: (_) => const ProfileScreen()),
         );
       } else {
-        // 🆕 New user → onboarding
+        
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (_) => const PersonalInfoScreen()),
@@ -108,7 +108,7 @@ Future<void> login() async {
             children: [
               const SizedBox(height: 40),
 
-              // 🔥 HEADER
+              
               const Text(
                 "Welcome Back 👋",
                 style: TextStyle(
@@ -124,7 +124,7 @@ Future<void> login() async {
 
               const SizedBox(height: 40),
 
-              // 🔥 EMAIL FIELD
+              
               _buildInput(
                 controller: emailController,
                 hint: "Email",
@@ -133,7 +133,7 @@ Future<void> login() async {
 
               const SizedBox(height: 16),
 
-              // 🔥 PASSWORD FIELD
+              
               _buildInput(
                 controller: passwordController,
                 hint: "Password",
@@ -143,7 +143,7 @@ Future<void> login() async {
 
               const SizedBox(height: 30),
 
-              // 🔥 LOGIN BUTTON
+              
               SizedBox(
                 width: double.infinity,
                 height: 55,
@@ -166,7 +166,7 @@ Future<void> login() async {
 
               const SizedBox(height: 20),
 
-              // 🔥 REGISTER LINK
+              
               Center(
                 child: GestureDetector(
                   onTap: () {
